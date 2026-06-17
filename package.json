@@ -1,0 +1,13 @@
+{
+  "name": "notas-u-supabase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx vercel dev",
+    "check": "node --check api/config.js && node --check api/admin-users.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | Notas U</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <main class="auth-screen">
+    <section class="auth-card">
+      <div class="auth-brand">
+        <img src="../assets/logo.svg" alt="Notas U" class="logo">
+        <div>
+          <strong>Notas U</strong>
+          <span>Cuenta de alumno</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow">Registro</p>
+        <h1>Crea tu cuenta</h1>
+      </div>
+
+      <form id="registerForm" class="auth-form">
+        <label>
+          Nombre
+          <input name="name" type="text" autocomplete="name" required>
+        </label>
+        <label>
+          Correo
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <label>
+          Clave
+          <input name="password" type="password" autocomplete="new-password" minlength="6" required>
+        </label>
+        <label>
+          Que estudiaras
+          <input name="study" type="text" placeholder="Ej: Ingenieria Informatica">
+        </label>
+        <button class="primary-button" type="submit">Crear cuenta</button>
+      </form>
+
+      <div class="auth-links">
+        <a href="login.html">Ya tengo cuenta</a>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="../config.js"></script>
+  <script type="module" src="../js/auth/register.js"></script>
+</body>
+</html>
